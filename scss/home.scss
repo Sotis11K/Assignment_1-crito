@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    color: #191919;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 15;
+}
+
+header{
+
+
+    // COLORS
+    background-color: #F0EFE9;
+    display: flex;
+
+    //POSITIONING
+
+    //MODIFICATIONS
+    padding: 1rem;
+    .container{
+        .menu-bars{
+            font-size: 1.5rem;
+
+            @media (min-width: 992px){
+                display: none;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5rem;
+
+        
+
+
+        .menu{
+            display: none;
+            flex:1;
+            @media (min-width: 992px){
+                display: block;
+            }
+
+
+
+
+
+
+
+
+
+
+            .top-menu{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 1rem;
+                border-bottom: solid #DAD9D3 1px;
+                @media (max-width: 1200px){
+                    justify-content: flex-end;
+                }
+                
+
+                .contact-information{
+                    display: flex;
+                    @media (max-width: 1200px){
+                        display: none;
+                    }
+                    .content-box{
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 300;
+                        font-size: 15;
+                        display: flex;
+                        gap: 0.5rem;
+                        align-items: center;
+                        margin-right: 2rem;
+                        border-right: 1px solid #DAD9D3;
+                        padding-right: 2rem;
+                        &:last-child{
+                            border:none;
+                        }
+                    }
+
+                }
+                .social-media-container{
+                    display: flex;
+                    gap: 1rem;
+                    i{
+                        color: #191919;
+                        font-size: 25px;
+                        &:hover{
+                            opacity: 0.75;
+                        }
+                    }
+                }
+
+
+                img{
+                    width: 1.2rem;
+                    height: 1.2rem;
+                }
+            }
+
+
+
+            .main-menu{
+                margin-top: 1rem;;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                nav{
+                    a{
+                        font-size: 15px;
+                        color: #191919;
+                        text-decoration: none;
+                        margin-right: 29px;
+                        position: relative;i
+                        &:active::after, &:hover::after{
+                            content: "";
+                            position: absolute;
+                            font-weight: 500;
+                            height  : 2px;
+                            width   : 1rem;  
+                            background-color: #191919;
+                            left    : 50%;
+                            transform: translate(-50%);
+                            bottom  : 0;
+                            border-radius: 0.5rem;
+                        }
+                        
+                    }
+                }
+                .login-button{
+                    background-color: #F9D783;
+                    width: 122px;
+                    height: 48px;
+                    border-radius: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    color: #191919;
+                    gap: 0.5rem;
+                    font-weight: 600;
+                    font-size: 16px;
+                    &:hover{
+                        background-color: black;
+                        color: white;
+                        transition-duration: 0.2s;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
