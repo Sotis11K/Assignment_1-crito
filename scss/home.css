@@ -17,6 +17,7 @@ html, body {
 
 header {
   background-color: #F0EFE9;
+  height: 100%;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -137,48 +138,53 @@ header .container .menu .main-menu .login-button:hover {
   color: white;
   transition-duration: 0.2s;
 }
-header .about-box {
+header .background-lines1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+header .header-container .about-box {
   height: 800px;
   width: 100%;
   display: flex;
-  align-items: center;
   flex: 1;
+  justify-content: space-between;
 }
 @media (max-width: 1200px) {
-  header .about-box {
+  header .header-container .about-box {
     justify-content: center;
     flex-direction: column;
   }
 }
-header .about-box .about-text {
+header .header-container .about-box .about-text {
   display: flex;
-  height: 95%;
+  height: 100%;
   padding-top: 5rem;
   flex-direction: column;
   width: 60%;
   gap: 2rem;
 }
-header .about-box .about-text h1 {
+header .header-container .about-box .about-text h1 {
   font-family: "DM Sans", sans-serif;
   font-weight: bold;
-  font-size: 96px;
+  font-size: 83px;
   line-height: 100px;
 }
 @media (max-width: 1200px) {
-  header .about-box .about-text h1 {
+  header .header-container .about-box .about-text h1 {
     font-size: 50px;
     line-height: 50px;
   }
 }
-header .about-box .about-text p {
+header .header-container .about-box .about-text p {
   font-size: 20px;
   font-weight: normal;
 }
-header .about-box .about-text .about-buttons {
+header .header-container .about-box .about-text .about-buttons {
   display: flex;
   gap: 1rem;
 }
-header .about-box .about-text .about-buttons a {
+header .header-container .about-box .about-text .about-buttons a {
   text-decoration: none;
   color: #191919;
   display: flex;
@@ -186,38 +192,37 @@ header .about-box .about-text .about-buttons a {
   align-items: center;
   gap: 5px;
 }
-header .about-box .about-text .about-buttons #about-button-consulting {
+header .header-container .about-box .about-text .about-buttons #about-button-consulting {
   background-color: #F9D783;
   width: 208px;
   height: 56px;
   border-radius: 40px;
 }
-header .about-box .about-text .about-buttons #about-button-consulting:hover {
+header .header-container .about-box .about-text .about-buttons #about-button-consulting:hover {
   cursor: pointer;
   background-color: #191919;
   color: white;
   transition-duration: 0.2;
 }
-header .about-box .about-text .about-buttons #about-button-learnmore {
+header .header-container .about-box .about-text .about-buttons #about-button-learnmore {
   background-color: transparent;
   width: 180px;
   height: 56px;
   border: #191919 1px solid;
   border-radius: 40px;
 }
-header .about-box .about-text .about-buttons #about-button-learnmore:hover {
+header .header-container .about-box .about-text .about-buttons #about-button-learnmore:hover {
   transition-duration: 0.2;
   cursor: pointer;
   background-color: #191919;
   color: white;
 }
-header .about-box .about-images {
-  align-self: flex-end;
-  height: 90%;
-  width: 53%;
+header .header-container .about-images {
+  height: 100%;
+  width: 70%;
 }
 @media (max-width: 1200px) {
-  header .about-box .about-images {
+  header .header-container .about-images {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,12 +230,12 @@ header .about-box .about-images {
     width: 100%;
   }
 }
-header .about-box .about-images img {
+header .header-container .about-images img {
   height: 100%;
   width: 100%;
 }
 @media (max-width: 1200px) {
-  header .about-box .about-images img {
+  header .header-container .about-images img {
     height: 100%;
     width: 50%;
   }
@@ -249,10 +254,12 @@ main .sponsors {
   }
 }
 main .features {
+  border: 1px solid rgba(25, 25, 25, 0.2);
   display: flex;
   justify-content: space-between;
   width: 90%;
   padding: 4rem;
+  margin-bottom: 6rem;
 }
 @media (max-width: 992px) {
   main .features {
@@ -416,4 +423,181 @@ main .about-company .about-company-text div .about-introvideo-button {
 }
 main .about-company .about-company-text div .about-introvideo-button i {
   font-size: 48px;
+}
+main .our-services-container {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F0EFE9;
+  height: 870px;
+}
+main .our-services-container div {
+  display: flex;
+  flex-direction: column;
+}
+main .our-services-container div span {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #F94D1C;
+}
+main .our-services-container div h2 {
+  font-size: 45px;
+  width: 40%;
+  font-family: "DM sans", sans-serif;
+  font-weight: bold;
+}
+main .our-services-container div .service-options {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .our-services-container div .service-options div {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: 333px;
+  width: 308px;
+}
+main .our-services-container div .service-options div div {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  gap: 0.5rem;
+}
+main .our-services-container div .service-options div div::before {
+  content: "";
+  font-weight: 500;
+  height: 1px;
+  width: 2.5rem;
+  background-color: #191919;
+}
+main .our-services-container div .service-options div div a {
+  text-decoration: none;
+  align-self: end;
+}
+main .our-services-container div .service-options div div a i {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  background-color: #191919;
+  border-radius: 50%;
+  color: white;
+}
+main .our-services-container div .service-options div .servicebox-1:hover, main .our-services-container div .service-options div .servicebox-2:hover, main .our-services-container div .service-options div .servicebox-3:hover, main .our-services-container div .service-options div .servicebox-4:hover {
+  background-color: #F9D783;
+}
+main .our-services-container div .service-options div .servicebox-1:hover i, main .our-services-container div .service-options div .servicebox-2:hover i, main .our-services-container div .service-options div .servicebox-3:hover i, main .our-services-container div .service-options div .servicebox-4:hover i {
+  background-color: white;
+  color: black;
+}
+main .our-services-container div .service-options div .servicebox-1:hover i:hover, main .our-services-container div .service-options div .servicebox-2:hover i:hover, main .our-services-container div .service-options div .servicebox-3:hover i:hover, main .our-services-container div .service-options div .servicebox-4:hover i:hover {
+  box-shadow: 0 0 10px 2px black;
+}
+main .our-services-container div .browse-services-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+main .our-services-container div .browse-services-link a {
+  border-radius: 40px;
+  border: 1px solid #191919;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: black;
+}
+main .our-services-container div .browse-services-link a:hover {
+  background-color: #F9D783;
+  color: white;
+  transition-duration: 0.2s;
+}
+main .why-choose-us {
+  margin-left: auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 870px;
+  width: 90%;
+}
+main .why-choose-us .why-choose-us-container {
+  display: flex;
+  height: 630px;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+  gap: 3rem;
+}
+main .why-choose-us .why-choose-us-container .why-choose-us-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 80%;
+  width: 30%;
+}
+main .why-choose-us .why-choose-us-container .why-choose-us-text span {
+  color: #F94D1C;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+main .why-choose-us .why-choose-us-container .why-choose-us-text h2 {
+  color: black;
+  font-family: "DM Sans", sans-serif;
+  width: 62%;
+  font-weight: bold;
+}
+main .why-choose-us .why-choose-us-container .why-choose-us-text .why-choose-us-descriptions-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+main .why-choose-us .why-choose-us-container .why-choose-us-text .why-choose-us-descriptions-container .why-choose-us-descriptions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+main .why-choose-us .why-choose-us-container .why-choose-us-text .why-choose-us-descriptions-container .why-choose-us-descriptions .img-container {
+  border-radius: 50%;
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  padding: 2rem;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .why-choose-us .why-choose-us-container .why-choose-us-text .why-choose-us-descriptions-container .why-choose-us-descriptions .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+main .why-choose-us .why-choose-us-container .why-choose-us-text .why-choose-us-descriptions-container .why-choose-us-descriptions .text-container h3 {
+  margin: 0;
+  font-size: 22px;
+}
+main .why-choose-us .why-choose-us-container .why-choose-us-text .why-choose-us-descriptions-container .why-choose-us-descriptions .text-container p {
+  color: rgba(25, 25, 25, 0.7);
+  margin: 0;
+}
+main .why-choose-us .why-choose-us-container .why-choose-us-img {
+  height: 80%;
+  width: 60%;
+}
+main .why-choose-us .why-choose-us-container .why-choose-us-img img {
+  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=home.css.map */
