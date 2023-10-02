@@ -600,4 +600,223 @@ main .why-choose-us .why-choose-us-container .why-choose-us-img {
 main .why-choose-us .why-choose-us-container .why-choose-us-img img {
   height: 100%;
   width: 100%;
+}
+main .global-projects .global-projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .global-projects .global-projects-container #project-text {
+  font-family: "Inter", sans-serif;
+  color: #f94d1c;
+}
+main .global-projects .global-projects-container h2 {
+  font-family: "DM sans", sans-serif;
+  font-weight: bold;
+  font-size: 45px;
+}
+main .global-projects .global-projects-container .project-container {
+  display: flex;
+  padding: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+main .global-projects .global-projects-container .project-container .project-boxes {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 1rem;
+}
+main .global-projects .global-projects-container .project-container .project-boxes:hover {
+  padding: 0;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+main .global-projects .global-projects-container .project-container .project-boxes span {
+  margin-top: 1rem;
+  font-family: "DM sans", sans-serif;
+  font-weight: bold;
+}
+main .global-projects .global-projects-container .project-container .project-boxes .project-readmore {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  align-self: end;
+  text-decoration: none;
+  color: black;
+}
+main .meet-the-crew {
+  background-color: RGBA(240, 208, 130, 0.93);
+}
+main .meet-the-crew .meet-the-crew-container .section-header-crew {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .meet-the-crew .meet-the-crew-container .section-header-crew span {
+  margin-top: 8rem;
+  color: #F94D1C;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+main .meet-the-crew .meet-the-crew-container .section-header-crew .flex-assist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .meet-the-crew .meet-the-crew-container .section-header-crew .flex-assist h2 {
+  color: #191919;
+  font-family: "Dm Sans", sans-serif;
+  font-weight: bold;
+  font-size: 45px;
+}
+main .meet-the-crew .meet-the-crew-container .section-header-crew .flex-assist a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 221px;
+  height: 56px;
+  border: #191919 1px solid;
+  border-radius: 40px;
+  color: #191919;
+}
+main .meet-the-crew .meet-the-crew-container .the-crew {
+  margin-top: 6rem;
+  display: flex;
+  gap: 2rem;
+}
+main .meet-the-crew .meet-the-crew-container .the-crew .crew-members {
+  display: flex;
+  flex-direction: column;
+}
+main .meet-the-crew .meet-the-crew-container .the-crew .crew-members h3 {
+  margin-top: 2rem;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "DM sans", sans-serif;
+}
+main .meet-the-crew .meet-the-crew-container .the-crew .crew-members span {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: rgba(25, 25, 25, 0.7);
+}
+main .meet-the-crew .meet-the-crew-container .crew-page-select {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+main .meet-the-crew .meet-the-crew-container .crew-page-select button {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: black;
+  opacity: 0.2;
+}
+main .meet-the-crew .meet-the-crew-container .crew-page-select button:hover, main .meet-the-crew .meet-the-crew-container .crew-page-select button:active {
+  opacity: 1;
+}
+main .meet-the-crew .meet-the-crew-container .testimonial {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+main .meet-the-crew .meet-the-crew-container .testimonial .testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 110%;
+  background-color: white;
+  padding: 7rem;
+}
+main .meet-the-crew .meet-the-crew-container .testimonial .testimonial-container span {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #f94d1c;
+}
+main .meet-the-crew .meet-the-crew-container .testimonial .testimonial-container h2 {
+  margin-top: 1rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+}
+main .meet-the-crew .meet-the-crew-container .testimonial .testimonial-container .reviews-container {
+  margin-top: 6rem;
+  display: flex;
+  gap: 10rem;
+}
+main .meet-the-crew .meet-the-crew-container .testimonial .testimonial-container .reviews-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .meet-the-crew .meet-the-crew-container .testimonial .testimonial-container .reviews-container div .review-rating {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+}
+main .meet-the-crew .meet-the-crew-container .testimonial .testimonial-container .reviews-container div .review-rating i {
+  color: #F94D1C;
+  font-size: 15px;
+}
+main .meet-the-crew .meet-the-crew-container .testimonial .testimonial-container .reviews-container div p {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+}
+main .meet-the-crew .meet-the-crew-container .testimonial .testimonial-container .reviews-container div .reviewer-information {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+main .meet-the-crew .meet-the-crew-container .testimonial .testimonial-container .reviews-container div .reviewer-information img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+main .meet-the-crew .meet-the-crew-container .testimonial .testimonial-container .reviews-container div .reviewer-information .flex-assist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .meet-the-crew .meet-the-crew-container .testimonial .testimonial-container .reviews-container div .reviewer-information .flex-assist h3 {
+  font-size: 22px;
+  font-family: "DM sans", sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+main .meet-the-crew .meet-the-crew-container .testimonial .testimonial-container .reviews-container div .reviewer-information .flex-assist span {
+  margin-top: -15px;
+  padding: 0;
+  color: #F94D1C;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+main .meet-the-crew .meet-the-crew-container .testimonial .testimonial-container .all-reviews {
+  margin-top: 7rem;
+  color: white;
+  background-color: #191919;
+  width: 181px;
+  height: 56px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  gap: 0.5rem;
+}
+main .meet-the-crew .meet-the-crew-container .testimonial .testimonial-container .all-reviews:hover, main .meet-the-crew .meet-the-crew-container .testimonial .testimonial-container .all-reviews:active {
+  background-color: white;
+  color: black;
+  border: solid 1px;
+  transition-duration: 0.2s;
 }/*# sourceMappingURL=home.css.map */
