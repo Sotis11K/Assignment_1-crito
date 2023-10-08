@@ -22,6 +22,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  position: relative;
 }
 header .container {
   display: flex;
@@ -144,6 +145,11 @@ header .background-lines1 {
   left: 0;
   bottom: 0;
 }
+@media (max-width: 1400px) {
+  header .background-lines1 {
+    display: none;
+  }
+}
 header .header-container .about-box {
   height: 800px;
   width: 100%;
@@ -252,6 +258,7 @@ header .letsconnect {
   justify-content: center;
   align-items: center;
   height: 300px;
+  position: relative;
 }
 header .letsconnect .connect-links {
   display: flex;
@@ -280,6 +287,11 @@ header .letsconnect h1 {
   header .letsconnect h1 {
     font-size: 30px;
   }
+}
+header .background-lines2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 main .sponsors {
@@ -479,37 +491,14 @@ main .our-services-container {
   background-color: #F0EFE9;
   height: 870px;
 }
+@media (max-width: 400px) {
+  main .our-services-container {
+    margin-top: 16rem;
+  }
+}
 main .our-services-container div {
   display: flex;
   flex-direction: column;
-  /*
-
-
-
-
-
-
-
-
-
-  dwiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuiuahp
-  dwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-  dwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-  dwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-  dwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-  dwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-  dwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-  dwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-  dwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-  dwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-  dwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-  dwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-  dwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-  dwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-
-
-
-  */
 }
 main .our-services-container div span {
   font-family: "Inter", sans-serif;
@@ -534,6 +523,11 @@ main .our-services-container div .service-options {
   flex-direction: row;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  main .our-services-container div .service-options {
+    flex-direction: column;
+  }
+}
 main .our-services-container div .service-options div {
   background-color: white;
   display: flex;
@@ -543,14 +537,14 @@ main .our-services-container div .service-options div {
   height: max-content;
   width: 20%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   main .our-services-container div .service-options div h3 {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
-@media (max-width: 1000px) and (max-width: 768px) {
-  main .our-services-container div .service-options div p {
-    display: none;
+@media (max-width: 1200px) and (max-width: 768px) {
+  main .our-services-container div .service-options div {
+    width: 100%;
   }
 }
 main .our-services-container div .service-options div div {
